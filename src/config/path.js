@@ -1,0 +1,1 @@
+export const HOST_PATH = "C:\\Windows\\System32\\drivers\\etc\\hosts"

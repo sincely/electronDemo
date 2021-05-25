@@ -1,0 +1,91 @@
+.overlay
+    :global
+        .ant-popover-inner-content
+            padding: 0
+
+.toolMenuBox
+    .toolMenu
+        width: 0.94rem
+        border-radius: 0 4px 0 0
+        background-color: #202020
+        font-size: 0.13rem
+        color: #999999
+        padding 0.08rem 0
+        .toolItem
+            height: 0.33rem
+            line-height: 0.33rem
+            text-align: center
+            cursor pointer
+            &:hover
+                background-color: #333333
+
+.root
+    display: flex
+    flex: 1
+    height 100%
+    flex-direction: column
+    justify-content: space-between
+    padding-top: 0.4rem
+    padding-bottom: 0.2rem
+    color: #999999
+    box-shadow: 0 0 0.1rem #000
+    position relative
+    z-index 1000
+    .logoBox
+        font-size: 0.12rem
+        color: #999999
+        display: flex
+        justify-content: center
+        margin-bottom: 0.3rem
+        text-align: center
+        font-weight: bold
+        .logoImg
+            // width: 0.36rem
+            height: 0.5rem
+            margin-bottom: 0.1rem
+    .asideMenus
+        text-align: center
+        line-height: 1
+        .menuItemBox
+            height: 1rem
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor pointer
+            transition: all 0.2s
+            &:hover
+                background-color: rgba(51,51,51,0.5)
+                // color: #fff
+            &.active
+                background-color: #333333
+                color: #1EFFFF
+            .menuItem
+                .iconBox
+                    font-size: 0.3rem
+                    margin-bottom: 0.12rem
+                    position relative
+                    &.active
+                        &:before
+                            content: ""
+                            position: absolute
+                            top: 0
+                            right: 0
+                            width: 6px
+                            height: 6px
+                            border-radius: 50%
+                            background-color: #D85656
+                            box-shadow: 0 0 0.1rem rgba(0,0,0,0.6)
+    .tools
+        position relative
+        .tool
+            text-align: center
+            cursor pointer
+            position relative
+            line-height: 1
+            font-size: 0.13rem
+            color: #999999
+            .toolIcon
+                vertical-align: bottom
+                margin 0
+                margin-right: 0.08rem
+            

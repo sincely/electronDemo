@@ -1,0 +1,3 @@
+export const SET_SETTING = 'SET_SETTING'
+export const SET_HOST_FILE = 'SET_HOST_FILE'
+export const SET_MY_PROJECTS = 'SET_MY_PROJECTS'

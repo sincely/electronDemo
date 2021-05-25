@@ -1,0 +1,42 @@
+html {
+  font-size: 100px;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #000;
+}
+
+/*定义滑块*/
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: #666;
+}
+
+*[drag] {
+  -webkit-app-region: drag;
+}
+
+/* 定制antd主题后，个别组件样式问题 */
+body {
+  .ant-switch-checked .ant-switch-handle {
+    left: calc(~'100% - 20px');
+  }
+}

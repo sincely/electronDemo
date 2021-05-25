@@ -1,0 +1,178 @@
+.Modal
+    .head
+        height: 0.4rem
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding-right: 0.2rem
+    .close
+        cursor pointer
+    .body
+        text-align: center
+        line-height: 1
+        margin-bottom: 0.4rem
+        letter-spacing: 1px
+        .title
+            font-size: 0.16rem
+            color: #ffffff
+            margin-bottom: 0.18rem
+            font-weight: bold
+        .sub
+            font-size: 0.12rem
+            color: #bbbbbb
+            span
+                color: #1AA7A7
+                cursor pointer
+    .foot
+        display: flex
+        justify-content: center
+        padding-bottom: 0.3rem
+        .btn
+            width: 1rem
+            height: 0.3rem
+            line-height: 0.3rem
+            text-align: center
+            border-radius: 4px
+            font-size: 0.14rem
+            cursor pointer
+            &+.btn
+                margin-left: 0.3rem
+        .confirm
+            background-color: #1AA7A7
+            color: #ffffff
+        .cancel
+            border 1px solid #666666
+            color: #666666
+    
+    // 带背景的head
+    .content
+        border-radius: 0.1rem
+        overflow hidden
+        .headTitle
+            font-size: 0.13rem
+            color: #ffffff
+            height: 0.4rem
+            display: flex
+            justify-content: center
+            align-items: center
+            position relative
+            background-color: #323232
+            .close
+                position: absolute
+                right: 0.2rem
+                top: 0.15rem
+        .ruleBox
+            padding 0.3rem 0.4rem 0.4rem
+            font-size: 0.14rem
+            .tr
+                display: flex
+                align-items: center
+                height: 0.52rem
+                color: #bbbbbb
+                &.trHead
+                    height: 0.35rem
+                    color: #ffffff
+                    background-color: rgba(0,0,0,0.3)
+                    border-radius: 4px 4px 0 0
+                &.split
+                    background-color: rgba(0,0,0,0.13)
+                &.last
+                    border-bottom: 1px solid rgba(0,0,0,0.25)
+                    margin-bottom: 0.14rem
+                .td
+                    flex: 1
+                    &:first-child
+                        flex: 0.8
+                        padding-left: 0.3rem
+                    &:last-child
+                        flex: 0.6
+            .tipBox
+                display: flex
+                color: #666666
+                font-size: 0.12rem
+                letter-spacing: 1px
+    .codeContent
+        padding-bottom: 0.3rem
+        .body
+            margin-bottom: 0
+            .title
+                font-size: 0.16rem
+                color: #ffffff
+                margin-bottom: 0.2rem
+            .code
+                width: 1.3rem
+                height: 1.3rem
+                margin 0 auto
+                margin-bottom: 0.1rem
+                border 1px solid #1EFFFF
+                border-radius: 4px
+                padding 7px
+                img
+                    width: 100%
+                    height: 100%
+            .codeTip
+                font-size: 0.12rem
+                color: #bbbbbb
+                text-align: center
+    .balanceContent
+        .body
+            text-align: center
+            padding: 0 0.5rem
+            margin-bottom: 0.3rem
+            .icon
+                margin-bottom: 0.2rem
+            .title
+                font-size: 0.16rem
+                color: #ffffff
+                margin-bottom: 0.2rem
+            .tip
+                font-size: 0.13rem
+                color: #bbbbbb
+                line-height: 0.2rem
+        .foot
+            .pay
+                background-color: #FFA935
+                color: #ffffff
+    .updateBox
+        color: #ffffff
+        text-align: left 
+        margin 0 0.5rem
+        .updateTitle
+            text-align: center
+            font-size: 0.2rem
+            margin-bottom: 0.24rem
+        .wrap
+            margin-left: 0.3rem
+            max-height 3rem
+            overflow-y: auto
+        h3
+            font-size: 0.18rem
+            color: #ffffff
+            margin-bottom: 0.16rem
+        .detailBox
+            margin-bottom: 0.24rem
+            .detailTitle
+                font-size: 0.16rem
+                margin-bottom: 0.1rem
+            ol
+                margin 0
+                li
+                    font-size: 0.14rem
+                    line-height: 0.24rem
+.loadingModal
+    [class~=ant-modal-content]
+        background-color: transparent
+    .loadingContent
+        text-align: center
+        .loadingIcon
+            font-size: 0.4rem
+            color: #ffffff
+            margin-bottom: 0.4rem
+        .tip
+            color: #ffffff
+.progressModal
+    .downloadInfo
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center

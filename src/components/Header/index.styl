@@ -1,0 +1,113 @@
+.btn
+    border none!important
+.arrears
+    color: #FF6446
+
+// 个人卡片气泡
+.personCardBox
+    font-size: 0.13rem
+    .personCard
+        width: 3rem
+        color: #ffffff
+        padding: 4px 4px 0
+        line-height: 1
+        .flex
+            display: flex
+            &+.flex
+                margin-top: 0.2rem
+            .key
+                width: 0.5rem
+                text-align-last: justify
+            &.part1
+                .key
+                    color: #bbbbbb
+            .value
+                letter-spacing: 1px
+        .userName
+            color: #bbbbbb
+        .userId
+            color: #bbbbbb
+        .part
+            padding: 0 0.1rem
+            border-bottom 1px solid #333333
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 0.2rem
+            margin-bottom: 0.2rem
+            &:last-of-type
+                margin-bottom: 0.12rem
+        .part1   
+            .value
+                color: #ffffff
+            .sign
+                width: 0.8rem
+                height: 0.3rem
+                // line-height: 0.3rem
+                background-color: #6AA64C   
+                font-size: 0.14rem
+                color: #ffffff
+                letter-spacing: 2px
+                cursor pointer
+                &:hover
+                    background-color: #32CD32
+                &.signed
+                    background-color: #999999
+                    pointer-events: none
+        .funs
+            display: flex
+            .fun
+                flex: 1
+                text-align: center
+                cursor pointer
+                &+.fun
+                    border-left: 1px solid #666666
+                .icon
+                    vertical-align: text-bottom
+                    margin-right: 8px
+.root
+    .head
+        -webkit-app-region: drag
+        display: flex
+        color: #ffffff
+        align-items: center
+        justify-content: space-between
+        .logo
+            font-size: 0.14rem
+            color: #ffffff
+            .logoImg
+                width: 0.36rem
+                height: 0.36rem
+                border-radius: 50%
+                margin-right: 0.1rem
+                cursor pointer
+        .right
+            -webkit-app-region: no-drag
+            display: flex
+            flex-direction: row-reverse
+            align-items: center
+            .splitLine
+                margin 0 0.3rem
+                height: 0.16rem
+                border-left: 1px solid #666
+            .icons
+                display: flex
+                .icon
+                    display: flex
+                    width: 0.28rem
+                    height: 0.28rem
+                    align-items: center
+                    justify-content: center
+                    font-size: 0.16rem
+                    margin-right: 0.16rem
+                    cursor pointer
+                    transition: background-color 0.2s
+                    &:hover
+                        background-color: #000
+                        border-radius: 2px
+                    &:last-child
+                        margin-right: 0
+            .payBtn
+                margin 0 0.3rem
+                height 0.3rem
+                color: #ffffff
