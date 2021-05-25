@@ -30,4 +30,3 @@
 
 #### 其他
 1. `windows powershell`中执行`get-StartApps`命令查看设置的appid
-2. `/home/webserver/static/fezz.che300.com/c3-electron` 更新包远程地址
