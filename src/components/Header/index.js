@@ -159,7 +159,7 @@ class Index extends Component {
               </div>
               <div className={[styles.userId, styles.flex].join(" ")}>
                 <span className={styles.key}>用户ID</span>：
-                <span className={styles.value}>{accountId || '13162596975'}</span>
+                <span className={styles.value}>{accountId || '9527'}</span>
               </div>
             </div>
           </div>
